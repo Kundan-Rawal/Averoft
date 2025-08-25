@@ -26,7 +26,7 @@ const Login = () => {
         throw new Error(data.error || "Login failed");
       }
 
-      // ✅ only save if login was successful
+      // only save if login was successful
       localStorage.setItem("user", JSON.stringify(data));
 
       navigate("/");
