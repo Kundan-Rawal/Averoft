@@ -55,7 +55,7 @@ Averoft/
 
 ### 1️⃣ Clone Repo
 
-git clone https://github.com/your-username/averoft.git
+git clone https://github.com/Kundan-Rawal/Averoft.git
 cd averoft
 
 ---
@@ -68,8 +68,7 @@ npm install
 - Create a `.env` file:
 
 PORT=5000
-DATABASE_URL=postgresql://user:password@host:port/dbname
-JWT_SECRET=your_jwt_secret
+DATABASE_URL=postgresql://neondb_owner:npg_a4CVQKnTO5eU@ep-calm-mode-a14x14sj-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
 
 - Run backend:
 
