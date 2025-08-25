@@ -4,9 +4,9 @@ export const getBookings = async (req, res) => {
   try {
     const result = await pool.query(`
       SELECT bookings.id, users.name AS user_name, events.title AS event_title, bookings.booked_at
-FROM bookings
-JOIN users ON bookings.user_id = users.id
-JOIN events ON bookings.event_id = events.id;
+      FROM bookings
+      JOIN users ON bookings.user_id = users.id
+      JOIN events ON bookings.event_id = events.id;
     `);
     res.json(result.rows);
   } catch (err) {
