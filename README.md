@@ -55,6 +55,8 @@ Averoft/
 
 ### 1️⃣ Clone Repo
 
+---
+
 git clone https://github.com/Kundan-Rawal/Averoft.git
 cd averoft
 

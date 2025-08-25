@@ -21,7 +21,7 @@ app.use("/api/attendees", attendeeRoutes);
 app.use("/api/auth", authRoutes);
 
 app.get("/", (req, res) => {
-  res.send("🚀 Event Management Backend is Running");
+  res.send("Event Management Backend is Running");
 });
 
 const PORT = process.env.PORT || 5000;
