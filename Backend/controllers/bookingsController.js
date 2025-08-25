@@ -3,10 +3,10 @@ import pool from "../db.js";
 export const getBookings = async (req, res) => {
   try {
     const result = await pool.query(`
-      SELECT b.id, u.name AS user_name, e.title AS event_title, b.booked_at
-      FROM bookings b
-      JOIN users u ON b.user_id = u.id
-      JOIN events e ON b.event_id = e.id
+      SELECT bookings.id, users.name AS user_name, events.title AS event_title, bookings.booked_at
+FROM bookings
+JOIN users ON bookings.user_id = users.id
+JOIN events ON bookings.event_id = events.id;
     `);
     res.json(result.rows);
   } catch (err) {
